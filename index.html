@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="resources/images/icons8-brick-wanicon-two-tone-96.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <title>Michael's Page</title>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <span class="initials" id="first-initial">M</span>
+        <span class="initials" id="last-initial">W</span>
+      </div>
+
+      <div class="menu">
+        <button class="menu-element" id="projectButton" href="">
+          Projects
+        </button>
+        <a
+          target="_blank"
+          class="menu-element"
+          href="https://github.com/SeekParadox"
+          >Github</a
+        >
+        <a class="menu-element" href="">Resume</a>
+      </div>
+    </div>
+
+    <section class="description">
+      <h1 id="greetings">Greetings.</h1>
+      <p id="introduction">
+        My name is Michael Waller, I'm a full-stack developer based in New York
+        City.
+      </p>
+    </section>
+    <section class="projects">
+      <h1 class="header-text" id="projects-text">Projects</h1>
+      <p style="text-align: center; color: #f4eee0">In progress</p>
+    </section>
+
+    <h1 class="header-text" id="projects-text">Technologies</h1>
+
+    <section class="techStack">
+      <div class="languages">
+        <div class="language-div">
+          <img class="language-img" src="resources/images/jee-3.svg" alt="" />
+          Java
+        </div>
+        <div class="language-div">
+          <img
+            class="language-img"
+            src="resources/images/python-5.svg"
+            alt=""
+          />
+          Python
+        </div>
+        <div class="language-div">
+          <img class="language-img" src="resources/images/react-2.svg" alt="" />
+          React
+        </div>
+        <div class="language-div">
+          <img
+            class="language-img"
+            src="resources/images/mongodb-icon-1.svg"
+            alt=""
+          />
+          Spring
+        </div>
+        <div class="language-div">
+          <img class="language-img" src="resources/images/mysql-6.svg" alt="" />
+          MySQL
+        </div>
+        <div class="language-div">
+          <img
+            class="language-img"
+            src="resources/images/logo-javascript.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <div class="contact">
+      <h1 id="contacth1">Contact</h1>
+      <form class="email-form" action="" method="post" enctype="text/plain">
+        <input
+          id="email-name"
+          class="form-box"
+          type="text"
+          placeholder="Name"
+        />
+        <input
+          id="email-box"
+          class="form-box"
+          type="email"
+          name=""
+          id=""
+          aria-required="true"
+          placeholder="Email"
+        />
+        <br />
+        <input
+          class="form-box"
+          id="email-subject"
+          type="text"
+          placeholder="Subject"
+        />
+        <br />
+        <textarea
+          id="message-box"
+          class="form-box"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button id="email-button" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+</html>
