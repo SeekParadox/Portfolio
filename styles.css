@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Concert+One&family=Dongle:wght@700&family=Open+Sans:wght@300&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+:root {
+  --background-color: #393646;
+  --text-color: #f4eee0;
+}
+
+a {
+  text-decoration: none;
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: var(--background-color);
+  /* top: -100px; */
+  /* margin-top: -200px; */
+  transition: top 0.5s;
+}
+
+.initials {
+  font-family: "Bungee Shade", cursive;
+  font-size: 25px;
+  color: var(--text-color);
+}
+.menu {
+  justify-self: end;
+}
+
+.menu-element {
+  all: unset;
+  color: var(--text-color);
+  font-family: "Concert One", cursive;
+}
+
+.menu-element:hover {
+  cursor: pointer;
+}
+
+.hide-container {
+  top: -70px;
+}
+
+.description {
+  padding: 2%;
+  /* width: 100%; */
+}
+
+#greetings {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+#introduction {
+  font: 1rem "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-right: 50px;
+  color: var(--text-color);
+}
+
+.projects {
+  /* display:flex; */
+}
+
+.header-text {
+  color: var(--text-color);
+
+  text-align: center;
+  font-family: "Dongle", sans-serif;
+  font-size: 40px;
+}
+
+.card {
+  background-color: #f4eee0;
+  width: 200px;
+  height: 200px;
+  border-radius: 4%;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Dongle", sans-serif;
+}
+.language-div {
+  flex-basis: 33.333333%;
+}
+.language-img {
+  height: 40px;
+  margin: auto;
+  display: block;
+  /* width: 50%; */
+
+  /* align-self: center; */
+
+  /* filter: grayscale(); */
+}
+
+/* .language-img:hover{
+    filter: none;
+} */
+
+/* .swiper-wrapper {
+    height: 500px;
+} */
+.swiper-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 50%;
+}
+
+#contacth1 {
+  color: var(--text-color);
+  font-family: "Dongle", sans-serif;
+  text-align: center;
+}
+
+.form-box {
+  outline: none;
+  border: solid var(--background-color) 2px;
+  height: 35px;
+  color: var(--text-color);
+  background-color: #4f4557;
+}
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#email-name {
+  /* width: 49%; */
+  flex-grow: 1;
+}
+
+#email-box {
+  flex-grow: 1;
+}
+#email-subject {
+  width: 100%;
+}
+#message-box {
+  height: 200px;
+  width: 100%;
+}
+
+#email-button {
+  margin: 10px 0px 5px auto;
+  width: 200px;
+  height: 50px;
+  background-color: inherit;
+  color: var(--text-color);
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+
+  border: solid #4f4557 4px;
+}
+
+#email-button:hover {
+  background-color: #6d5d6e;
+}
+
+@media screen and (min-width: 280px) {
+  .header {
+    padding: 0 30px 0 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .email-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .languages {
+    padding: 0 50px 0 50px;
+  }
+  .language-img {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .email-form {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    width: 35vw;
+  }
+
+  #message-box {
+    height: 200px;
+    width: 100%;
+    height: 300px;
+  }
+  .languages {
+    padding: 0 50px 0 50px;
+  }
+  .language-img {
+    height: 70px;
+  }
+}
