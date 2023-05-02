@@ -15,7 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
-    <title>Michael's Page</title>
+    <title>Michael Waller</title>
   </head>
   <body>
     <div class="header">
@@ -34,7 +34,7 @@
           href="https://github.com/SeekParadox"
           >Github</a
         >
-        <a class="menu-element" href="">Resume</a>
+        <a target="_blank" class="menu-element" href="">Resume</a>
       </div>
     </div>
 
@@ -47,7 +47,16 @@
     </section>
     <section class="projects">
       <h1 class="header-text" id="projects-text">Projects</h1>
-      <p style="text-align: center; color: #f4eee0">In progress</p>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
     <h1 class="header-text" id="projects-text">Technologies</h1>
@@ -128,7 +137,50 @@
         <button id="email-button" type="submit">Submit</button>
       </form>
     </div>
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 'auto',
+            slidesPerGroup: 1,
+            centeredSlides: false,
+          },
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 40,
+
+            centeredSlides: false,
+          },
+          1024: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 50,
+
+            centeredSlides: false,
+          },
+          1200: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
