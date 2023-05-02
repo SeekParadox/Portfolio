@@ -1,20 +1,3 @@
 {
   "type": "module",
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "personal website project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SeekParadox/Portfolio.git"
-  },
-  "author": "Michael Waller",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SeekParadox/Portfolio/issues"
-  },
-  "homepage": "https://github.com/SeekParadox/Portfolio#readme"
 }
